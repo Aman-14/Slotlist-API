@@ -21,5 +21,7 @@ It accepts data in the following format:
 }
 ```
 
+Response : The api will resond with an Array containing teamnames. And it will add `NOT FOUND` if message doesn't contain teamname
+
 **NOTE:**  
 `content_array` should be a array of Strings containing teamnames. Otherwise the endpoint will return a message `Empty-Body`
