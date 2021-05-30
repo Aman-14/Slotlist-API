@@ -30,6 +30,10 @@ app.post("/slotlist", (req, res) => {
   res.json(slotlist);
 });
 
+app.get("/ping", (req, res) => {
+  res.send("Pong!");
+});
+
 app.listen(3500, () => {
   "Server is running";
 });
