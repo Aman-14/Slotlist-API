@@ -18,6 +18,10 @@ const findTeam = (content) => {
   return foundTeam ? `Team ${foundTeam}` : "NOT FOUND";
 };
 
+app.get("/", (req, res) => {
+  res.send("Running");
+});
+
 app.post("/slotlist", (req, res) => {
   const slotlist = [];
   if (!req.body?.content_array || !Array.isArray(req.body?.content_array)) {
@@ -34,6 +38,6 @@ app.get("/ping", (req, res) => {
   res.send("Pong!");
 });
 
-app.listen(3500, () => {
+app.listen(process.env.PORT || 3500, () => {
   "Server is running";
 });
