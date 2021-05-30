@@ -1,6 +1,8 @@
 # Slotlist Generator
 
-Just a simple and small API that generates slotlist
+Just a simple and small API that generates slotlist.
+
+Base URL : `https://slotlistapi.herokuapp.com/`
 
 ## Routes
 
